@@ -6,12 +6,17 @@ import { HeaderComponent } from './elementos/header/header.component';
 import { MainComponent } from './elementos/main/main.component';
 import { FooterComponent } from './elementos/footer/footer.component';
 import { NotFoundComponent } from './elementos/not-found/not-found.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './elementos/login/login.component';
+import { LogoutComponent } from './elementos/logout/logout.component';
+import { DevAdminComponent } from './dev-admin/dev-admin.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [ElementosComponent, HeaderComponent, MainComponent, FooterComponent, NotFoundComponent],
-  exports: [ElementosComponent]
+  declarations: [ElementosComponent, HeaderComponent, MainComponent, FooterComponent,
+    NotFoundComponent, RegisterComponent, LoginComponent, LogoutComponent, DevAdminComponent],
+  exports: [ElementosComponent, RegisterComponent]
 })
 export class CoreModule { }
